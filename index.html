@@ -9,55 +9,60 @@
     <title>Documentation JavaScript</title>
 </head>
 <body>
-    <nav id="navbar" class="navbar">
-      <header>
-        <h1>JS Documentation</h1>
-      </header>
-      <ul class="list_documentation">
-        <li>
-          <a id="nav-link" class="nav-link" href="#introduction">Introduction</a>
-        </li>
-        <li>
-          <a id="nav-link" class="nav-link" href="#what_you_should_already_know">What you should already know</a>
-        </li>
-        <li>
-          <a id="nav-link" class="nav-link" href="#javaScript_and_java">JavaScript and Java</a>
-        </li>
-        <li>
-          <a id="nav-link" class="nav-link" href="#hello_world">Hello world</a>
-        </li>
-        <li>
-          <a id="nav-link" class="nav-link" href="#variables">Variables</a>
-        </li>
-        <li>
-          <a id="nav-link" class="nav-link" href="#declaring_variables">Declaring variables</a>
-        </li>
-        <li>
-          <a id="nav-link" class="nav-link" href="#variable_scope">Variable scope</a>
-        </li>
-        <li>
-          <a id="nav-link" class="nav-link" href="#global_variables">Global variables</a>
-        </li>
-        <li>
-          <a id="nav-link" class="nav-link" href="#constants">Constants</a>
-        </li>
-        <li>
-          <a id="nav-link" class="nav-link" href="#data_types">Data types</a>
-        </li>
-        <li>
-          <a id="nav-link" class="nav-link" href="#if...else_statement">if...else statement</a>
-        </li>
-        <li>
-          <a id="nav-link" class="nav-link" href="#while_statement">while statement</a>
-        </li>
-        <li>
-          <a id="nav-link" class="nav-link" href="#function_declarations">Function declarations</a>
-        </li>
-        <li>
-          <a id="nav-link" class="nav-link" href="#reference">Reference</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="content-navbar">
+        <nav id="navbar" class="navbar">
+          <header>
+              <div class="content-title">
+                  <img src="./images//javascript-96.png" alt="logo javascript">
+                  <h1>Documentation</h1>
+              </div>
+          </header>
+          <ul class="list_documentation">
+            <li data-url="Inroduction">
+              <a id="nav-link" class="nav-link" href="#introduction">Introduction</a>
+            </li>
+            <li data-url="what_you_should_already_know">
+              <a id="nav-link" class="nav-link" href="#what_you_should_already_know">What you should already know</a>
+            </li>
+            <li data-url="javaScript_and_java">
+              <a id="nav-link" class="nav-link" href="#javaScript_and_java">JavaScript and Java</a>
+            </li>
+            <li data-url="hello_world">
+              <a id="nav-link" class="nav-link" href="#hello_world">Hello world</a>
+            </li>
+            <li data-url="variables">
+              <a id="nav-link" class="nav-link" href="#variables">Variables</a>
+            </li>
+            <li data-url="declaring_variables">
+              <a id="nav-link" class="nav-link" href="#declaring_variables">Declaring variables</a>
+            </li>
+            <li data-url="variable_scope">
+              <a id="nav-link" class="nav-link" href="#variable_scope">Variable scope</a>
+            </li>
+            <li data-url="global_variables">
+              <a id="nav-link" class="nav-link" href="#global_variables">Global variables</a>
+            </li>
+            <li data-url="constants">
+              <a id="nav-link" class="nav-link" href="#constants">Constants</a>
+            </li>
+            <li data-url="data_types">
+              <a id="nav-link" class="nav-link" href="#data_types">Data types</a>
+            </li>
+            <li data-url="if...else_statement">
+              <a id="nav-link" class="nav-link" href="#if...else_statement">if...else statement</a>
+            </li>
+            <li data-url="while_statement">
+              <a id="nav-link" class="nav-link" href="#while_statement">while statement</a>
+            </li>
+            <li data-url="function_declarations">
+              <a id="nav-link" class="nav-link" href="#function_declarations">Function declarations</a>
+            </li>
+            <li data-url="reference">
+              <a id="nav-link" class="nav-link" href="#reference">Reference</a>
+            </li>
+          </ul>
+        </nav>
+    </div>
     <main id="main-doc">
       <section id="introduction" class="main-section">
         <header>
@@ -266,5 +271,6 @@
         </article>
       </section>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>
