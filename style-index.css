@@ -1,0 +1,109 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: arial;
+    margin: 0;
+    line-height: 2;
+    background-color: #EBEBEB;
+    color: #333333;
+    font-size: 16px;
+}
+
+header {
+    padding: 5px 0 0 5px; 
+    margin-left: 20px; 
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    width: 300px;
+    height: 100%;
+    border-right: solid 2px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#navbar ul {
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li {
+    width: 100%;
+    border-top: 1px solid;
+}
+
+#navbar a {
+    display: block;
+    padding: 7px 30px;
+    transition: 350ms;
+}
+
+#navbar a:hover {
+    background-color: #C0C0C0;
+    transform: translate3d(3px, 0, 0);
+}
+
+#main-doc {
+    margin-left: 310px;
+}
+
+.list_documentation {
+    list-style: none;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#nav-link {
+    text-decoration: none;
+    color: #333333;
+}
+
+article {
+    margin: 0 35px 0 45px;
+    text-align: justify;
+}
+
+ul {
+    margin: 0 35px;
+
+}
+
+article li {
+    margin-bottom: 10px;
+}
+
+code {
+    display: block;
+    background-color: #C0C0C0;
+    text-align: left;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+    #navbar {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-x: hidden;
+        border-bottom: 1px solid;
+        border-right: none;
+    }
+
+    #main-doc {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    ul{
+        margin: 0;
+    }
+}
