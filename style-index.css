@@ -24,6 +24,7 @@ header {
 .content-title {
     display: flex;
     align-items: center;
+    padding: 5px;
 }
 
 img {
@@ -32,6 +33,22 @@ img {
 }
 
 .navbar {
+    background-color: #E0E0E0;
+    border-radius: 5px;
+    position: fixed;
+    min-width: 290px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 78%;
+    box-shadow: 1px 1px 1px 2px #333333;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 2;
+    top: 10%;
+}
+
+.navbar-open {
     background-color: #E0E0E0;
     border-radius: 5px;
     position: fixed;
@@ -64,7 +81,7 @@ img {
 }
 
 #main-doc {
-    margin-left: 310px;
+    margin-left: 330px;
     margin-top: 20px;
 }
 
@@ -113,9 +130,17 @@ code {
     border-radius: 5px;
 }
 
+.btn {
+    display: none;
+}
+
+.arrow {
+    height: 24px;
+
+}
 
 @media (max-width: 800px) {
-    #navbar {
+    /* #navbar {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -124,10 +149,11 @@ code {
         overflow-x: hidden;
         border-bottom: 1px solid;
         border-right: none;
-    }
+    } */
 
     #main-doc {
         margin: 0;
+        margin-top: 60px;
         padding: 0;
         width: 100%;
         overflow-x: hidden;
@@ -136,4 +162,21 @@ code {
     ul{
         margin: 0;
     }
+
+    .navbar {
+        display: none;
+    }
+
+    .btn {
+        background-color: #E0E0E0;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        padding: 5px;
+        margin: 10px;
+    }
+
 }
