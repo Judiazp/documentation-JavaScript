@@ -64,6 +64,10 @@ img {
     top: 10%;
 }
 
+.navbar-closed {
+    display: none;
+}
+
 #navbar ul {
     padding: 0;
     margin: 0;
@@ -82,7 +86,6 @@ img {
 
 #main-doc {
     margin-left: 330px;
-    margin-top: 20px;
 }
 
 .list_documentation {
@@ -90,7 +93,6 @@ img {
     margin-top: 0;
     margin-left: 0;
 }
-
 
 .nav-link {
     text-decoration: none;
@@ -140,20 +142,13 @@ code {
 }
 
 @media (max-width: 800px) {
-    /* #navbar {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-left: 0;
-        overflow-x: hidden;
-        border-bottom: 1px solid;
-        border-right: none;
-    } */
+
+    .main-section-title {
+        margin-top: 60px;
+    }
 
     #main-doc {
         margin: 0;
-        margin-top: 60px;
         padding: 0;
         width: 100%;
         overflow-x: hidden;
@@ -177,6 +172,10 @@ code {
         outline: none;
         padding: 5px;
         margin: 10px;
+    }
+
+    .btn:hover {
+        background-color: #FFC60A;
     }
 
 }
